@@ -106,6 +106,7 @@
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp20</LanguageStandard>
       <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\src;$(ProjectDir)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -128,13 +129,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="FS_U8g2font.cpp" />
+    <ClCompile Include="..\..\src\FS_U8g2font.cpp" />
     <ClCompile Include="lgfx_efont_ja.c" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="U8g2font .cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="FS_U8g2font.h" />
+    <ClInclude Include="..\..\src\FS_U8g2font.h" />
     <ClInclude Include="lgfx_efont_ja.h" />
     <ClInclude Include="PC_debug.h" />
     <ClInclude Include="U8g2font.h" />
