@@ -50,6 +50,9 @@ static PreloadBlock preloadBlock[]= {
 ```
 
 ## フォントデータの利用
+- [src/](src/) に```FS_U8g2font```クラスのソースファイルがあります。
+- LovyanGFXライブラリに依存しており、```setFont```関数で利用できます。
+
 ### フォントのロード
 ```c++
 #include "FS_U8g2font.h"
@@ -68,6 +71,15 @@ lgfx::FS_U8g2font font;
   font.loadGlyph("国破山河在"); // 必要な漢字を列挙
   font.loadGlyph("国破れて山河在り"); // RAM展開済みの文字は無視される
   font.loadGlyph(0x56FD); // UTF-16コードでも指定できる
+```
+
+### フォントの指定
+```c++
+extern lgfx::LGFX_Device Display;
+
+...
+
+  Display.setFont(font);
 ```
 
 ### 一時データのロード
