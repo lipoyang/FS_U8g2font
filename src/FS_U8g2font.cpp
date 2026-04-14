@@ -45,9 +45,9 @@ namespace lgfx
       // プリロード文字ブロックの数
       _preload_cnt = _header[27];
 
-      DEBUG_PRINT("_header_size = %d\n", _header_size);
-      DEBUG_PRINT("_lut_size    = %d\n", _lut_size);
-      DEBUG_PRINT("_preload_cnt = %d\n", _preload_cnt);
+      // DEBUG_PRINT("_header_size = %d\n", _header_size);
+      // DEBUG_PRINT("_lut_size    = %d\n", _lut_size);
+      // DEBUG_PRINT("_preload_cnt = %d\n", _preload_cnt);
     }
 
     // プリロード文字ブロック情報をロード
