@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="fs_font/fs_font.vcxproj" Id="b4f010b5-021e-4950-a481-de17ca648dd5" />
+</Solution>
